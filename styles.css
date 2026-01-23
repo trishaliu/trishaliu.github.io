@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+* {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.topButton{
+    background-color: rgb(223, 166, 223);
+    color: white;
+    border: 5px solid black;
+    padding: 10px; /* distance between text and edge */
+    cursor: pointer;
+}
+
+.buttonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.imageWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.65fr 0.6fr repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+}
+.title { 
+    grid-area: 1 / 1 / 2 / 6; 
+}
+
+.topBar { 
+    border-bottom: 10px solid rgb(223, 166, 223);
+    grid-area: 2 / 1 / 3 / 6; 
+}
+.leftBar { 
+    /*border-right: 10px solid rgb(223, 166, 223);*/
+    grid-area: 3 / 1 / 7 / 3; 
+}
+.rightBar { 
+    grid-area: 3 / 3 / 7 / 6; 
+}
+.headshot{
+    height: 500px;
+}
+
+.topHeader{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    height: 100%;
+}
+
+.titleGreeting{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.introParagraph{
+    font-size: 20px; 
+    color:black;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.interestsHeader{
+    font-size: 20px; 
+    font-weight: bold;
+    color:black;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.interestsList{
+    font-size: 20px; 
+    color:black;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.interestsListUL{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.socialIcon{
+    height: 50px;
+    width: 50px;
+}
+
+.socialContainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: right;
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+
+.moreYap{
+    font-size: 20px; 
+    font-weight: bold;
+    color:black;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
